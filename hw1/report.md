@@ -31,13 +31,13 @@
 
  建構第五代通訊的主要挑戰有：**超高速通訊速率、高佈建密度、高行動速率、低遲延時間、大量裝置的連結、一致的用戶體驗及綠能**
 
-![截圖 2020-04-01 下午3.21.41](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw1/report.assets/截圖 2020-04-01 下午3.21.41.png)
+![截圖 2020-04-01 下午3.21.41](report.assets/截圖 2020-04-01 下午3.21.41.png)
 
 ​																				source: IMT-2020
 
 #### C-RAN (Cloud Radio Access Network)
 
-![image-20200401153633670](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw1/report.assets/image-20200401153633670.png)
+![image-20200401153633670](report.assets/image-20200401153633670.png)
 
 在傳統的蜂巢網路架構中，天線（Antenna）、射頻設備（RF equipment）、數位處理器（Digital Processor）、基頻單元裝置（Base Band Unit）全都集中安置在同一個站點的基地台（Base Transceiver Station，BTS） 之中。 相較於傳統基地台，C-RAN主要是由主動式天線陣列（Active Antenna Arrays）、多頻段遠端無線電站（Remote Radio Head，RRH）、集中化基頻單元裝置（Base Band Unit，BBU）、公共管理伺服器（Common Management Server）、雲端無線網路控制器（Radio Network Controllers on Cloud）、大型蜂巢式（Metro Cells）與可實現無縫管理與優化之自我組織網路（Self-Organizing Network，SON）伺服器等元件所組成的**分佈式無線存取網路**。
 
@@ -49,7 +49,7 @@ C-RAN的概念是**打破過去傳統基地台的BBU與RRH之間的固定連結�
 
 目前因為大部分的通訊頻段已經被使用，再加上 5G 其中的挑戰在於高用戶體驗率、高用戶峰值速率、高流量密度，因此需要朝向使用高頻區段的訊號，也就是毫米波的頻寬範圍。下圖為毫米波的頻率範圍。
 
-![image-20200401195817750](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw1/report.assets/image-20200401195817750.png)
+![image-20200401195817750](report.assets/image-20200401195817750.png)
 
 - 毫米波使用頻段
 
@@ -73,7 +73,7 @@ C-RAN的概念是**打破過去傳統基地台的BBU與RRH之間的固定連結�
   1. 毫米波快速衰減的特性，剛好符合密集都會地區頻率複用的需求，以免造成其他鏈路信號在天線背後灌入過高輻射能量，而影響該天線前向鏈路信號傳輸品質。
   2. 由於毫米波的短波長特性，使得傳接收端允許配置大型的天線陣列，藉此得到更高的波束增益(Beamforming gain)，不僅能有效對抗因大氣吸收和降雨所帶來的損耗，更能降 鄰近基地台彼此間的干擾，而毫米波基地台也因此得以佈建得更加密集，以解決傳統基地台在細胞邊緣信號品質不佳的問題
 
-  ![image-20200401200232621](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw1/report.assets/image-20200401200232621.png)
+  ![image-20200401200232621](report.assets/image-20200401200232621.png)
 
   | 傳統                               | 毫米波                                                       |
   | ---------------------------------- | ------------------------------------------------------------ |
@@ -89,7 +89,7 @@ C-RAN的概念是**打破過去傳統基地台的BBU與RRH之間的固定連結�
    使用場景：電話線、網路線（RJ-45）
 
    使用限制：Low bit rate
-   ![img](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw1/report.assets/220px-UTP_cable.jpg)
+   ![img](report.assets/220px-UTP_cable.jpg)
 
 2. Coaxial cable
 
@@ -99,7 +99,7 @@ C-RAN的概念是**打破過去傳統基地台的BBU與RRH之間的固定連結�
 
    資料傳輸形式：share medium 不同 end system 可以連接相同的電線並佔用各自的頻段範圍
 
-   <img src="/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw1/report.assets/lmr600.jpg" alt="LMR600 Flexible Low-loss Coaxial Cable, .590 dia." style="zoom:33%;" />
+   <img src="report.assets/lmr600.jpg" alt="LMR600 Flexible Low-loss Coaxial Cable, .590 dia." style="zoom:33%;" />
 
 3. Fiber optics
    光纖是一種由玻璃或塑料製成的纖維，利用光在這些纖維中以全內反射原理傳輸的光傳導工具。
@@ -109,7 +109,7 @@ C-RAN的概念是**打破過去傳統基地台的BBU與RRH之間的固定連結�
    特色：high bit rates、不受電磁訊號干擾、low singal attenuation 
 
    使用限制：高額成本使得短距離鋪設（LAN, Residential access network）不可行
-    ![img](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw1/report.assets/550px-Optical_fiber_types.svg.png)
+    ![img](report.assets/550px-Optical_fiber_types.svg.png)
 
 ### Unguided Media
 

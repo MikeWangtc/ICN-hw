@@ -35,7 +35,7 @@ Web brower 功能：
 
 | Multiple connection                                          | Persistent connection                                        |
 | ------------------------------------------------------------ | :----------------------------------------------------------- |
-| ![image-20200407143604412](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw2/report.assets/image-20200407143604412.png) | ![image-20200407143616431](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw2/report.assets/image-20200407143616431.png) |
+| ![image-20200407143604412](/report.assets/image-20200407143604412.png) | ![image-20200407143616431](/report.assets/image-20200407143616431.png) |
 | Client 和 Server 間只會存在一次的 connection<br />當 client request 被 server response 後<br />則 connection 斷開 | Client 和 Server 間保持 connection 連結<br />                |
 | Connection: close                                            | Connection: Keep-Alive                                       |
 
@@ -47,7 +47,7 @@ Web brower 功能：
 
 # Http
 
-![http_steps.png](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw2/report.assets/5c7364461a155http_steps-b357dd4b18e4e436885bfcc39bd64795.png)
+![http_steps.png](/report.assets/5c7364461a155http_steps-b357dd4b18e4e436885bfcc39bd64795.png)
 
 ### HTTP is stateless, but not sessionless
 
@@ -65,7 +65,7 @@ HTTP isn't sessionless: HTTP cookies 允許記憶 server 回傳給 browser 的�
 
 ## Decomposition of http request
 
-![A basic HTTP request](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw2/report.assets/HTTP_Request.png)
+![A basic HTTP request](/report.assets/HTTP_Request.png)
 
 ### Method
 
@@ -122,7 +122,7 @@ content-length：傳入資料的長度（在 connection 為 keep-alive 下可作
 
 ## Decomposition of http response
 
-![img](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw2/report.assets/HTTP_Response.png)
+![img](/report.assets/HTTP_Response.png)
 
 ### Status code
 
@@ -136,7 +136,7 @@ content-length：傳入資料的長度（在 connection 為 keep-alive 下可作
 
 ## Evolution of HTTP
 
-### ![http2_3.png](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw2/report.assets/5c7364466c1d5http2_3-8dd7b338c9ef583afa0c5c71c17cff34.png)HTTP/2
+### ![http2_3.png](/report.assets/5c7364466c1d5http2_3-8dd7b338c9ef583afa0c5c71c17cff34.png)HTTP/2
 
 ---
 
@@ -153,7 +153,7 @@ HTTP/2 的一項新特色是加上了伺服器推送功能，**伺服器可以�
 HEADER 在傳輸的時候，有蠻多重複或冗餘的資訊，這些資訊可藉由 [HPACK 壓縮技術](https://http2.github.io/http2-spec/compression.html) 1. 靜態字典 2. 動態字典 3. 霍夫曼編碼 壓縮 HEADER 來增加傳輸速度。 
 
 - 靜態字典：是先定義好的 Header name 的 indexing 關係，
-  ![image-20200408011914651](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw2/report.assets/image-20200408011914651.png)
+  ![image-20200408011914651](/report.assets/image-20200408011914651.png)
 
 - 動態字典：以 FIFO 的方式 index 重複存在於 header list 中的 header fields
 
@@ -161,7 +161,7 @@ HEADER 在傳輸的時候，有蠻多重複或冗餘的資訊，這些資訊可�
 
   傳統的 Huffman encoding：降低儲存資訊的記憶體
 
-  ![Example of the Huffman tree and its three possible encodings. (a ...](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw2/report.assets/Example-of-the-Huffman-tree-and-its-three-possible-encodings-a-Illustration-example.png)
+  ![Example of the Huffman tree and its three possible encodings. (a ...](/report.assets/Example-of-the-Huffman-tree-and-its-three-possible-encodings-a-Illustration-example.png)
   HPACK compression 的 Huffman encoding（canonical Huffman code）
   傳統演算法的問題來自於：其中一方必須儲存或整顆傳輸霍夫曼樹以便解碼
 
@@ -173,9 +173,9 @@ HEADER 在傳輸的時候，有蠻多重複或冗餘的資訊，這些資訊可�
   **canonical Huffman code**
   左側為傳統的 Huffman tree，右側為經過規範後的 Huffman tree，因為整齊排列的性質可以透過單純記憶**「在高度 h 時，有幾個葉子節點」**加上 $\Omicron(1)$ 的轉換運算直接求得 Code-Symbol 的 mapping 關係
 
-  | 傳統 Huffman tree 轉換 Canonical Huffman tree                | $\Omicron(1)$ 的轉換運算                                     |
-  | ------------------------------------------------------------ | ------------------------------------------------------------ |
-  | ![img](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw2/report.assets/0*tV7Xo0tQsc6zMa1c.jpg) | ![img](/Users/Mike/Library/Mobile Documents/com~apple~CloudDocs/國立台灣大學NTU/108-2-電腦網路導論/hw/hw2/report.assets/0*3IFU5HIIeu58eYN_-20200408110317262.jpg) |
+  | 傳統 Huffman tree 轉換 Canonical Huffman tree | $\Omicron(1)$ 的轉換運算                                     |
+  | --------------------------------------------- | ------------------------------------------------------------ |
+  | ![img](/report.assets/0*tV7Xo0tQsc6zMa1c.jpg) | ![img](/report.assets/0*3IFU5HIIeu58eYN_-20200408110317262.jpg) |
 
   ```
   記憶內容										葉子高度和 code 的轉換關係
