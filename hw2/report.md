@@ -5,7 +5,7 @@
 ## Workflow of web service
 
 
-![Client server chain](file:///Users/Mike/Library/Mobile%20Documents/com~apple~CloudDocs/%E5%9C%8B%E7%AB%8B%E5%8F%B0%E7%81%A3%E5%A4%A7%E5%AD%B8NTU/108-2-%E9%9B%BB%E8%85%A6%E7%B6%B2%E8%B7%AF%E5%B0%8E%E8%AB%96/hw/hw2/report.assets/Client-server-chain.png?lastModify=1586316929)
+![Client server chain](report.assets/Client-server-chain.png?lastModify=1586316929)
 
 ### Server
 
