@@ -10,8 +10,14 @@ make
 ```bash
 bash script.sh
 # cli
-RouterMgr >> lf <caset.txt>
+RouterMgr >> lf <case.txt>
 RouterMgr >> of
 RouterMgr >> rm r<number-of-router>
+```
+
+```bash
+make clean
+make
+./p1
 ```
 

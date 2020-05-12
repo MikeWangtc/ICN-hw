@@ -15,3 +15,9 @@ RouterMgr >> of
 RouterMgr >> rm r<number-of-router>
 ```
 
+```bash
+make clean
+make
+./p2
+```
+
